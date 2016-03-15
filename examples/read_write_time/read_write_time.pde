@@ -44,6 +44,9 @@ void loop(void){
   sprintf(time, "%02d/%02d/%02d %02d:%02d:%02d",
 	  p.year, p.month, p.day, p.hour, p.minute, p.second);
   Serial.println(time);
+  
+  unsigned long int shorttime=p.makeTime();
+  Serial.println(shorttime);
 
   delay(3000);
 }
